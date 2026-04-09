@@ -101,7 +101,7 @@ body { font-family:'Inter','Segoe UI',Arial,sans-serif; background:#f0f2f0; colo
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1e7e1e" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
     <span style="font-size:12px;color:#2a6b2a;font-weight:600;font-family:Inter,sans-serif;">Afiliate y sumate a defender nuestros derechos</span>
     <span style="font-size:11px;color:#5a5a5a;font-family:Inter,sans-serif;">·</span>
-    <a href="mailto:delegadosate.cge@gmail.com" style="font-size:12px;color:#1e7e1e;font-family:Inter,sans-serif;text-decoration:none;font-weight:500;">delegadosate.cge@gmail.com</a>
+    <a href="/cdn-cgi/l/email-protection#b8dcddd4dddfd9dcd7cbd9ccdd96dbdfddf8dfd5d9d1d496dbd7d5" style="font-size:12px;color:#1e7e1e;font-family:Inter,sans-serif;text-decoration:none;font-weight:500;"><span class="__cf_email__" data-cfemail="2246474e474543464d514356470c41454762454f434b4e0c414d4f">[email&#160;protected]</span></a>
   </div>
 </div>
 
@@ -119,9 +119,9 @@ body { font-family:'Inter','Segoe UI',Arial,sans-serif; background:#f0f2f0; colo
 
 <div class="page" id="page"></div>
 
-<div class="foot"><strong>ATE Entre Ríos</strong> · Catálogo de Beneficios para Afiliados · 2026</div>
+<div class="foot"><strong>ATE Entre Ríos</strong> · Catálogo de Beneficios para Afiliados · 100 años de lucha · 2026</div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const S = [
   {
     id:"turismo",
@@ -143,11 +143,11 @@ const S = [
         desc:"Norte argentino con 4 noches en Salta y excursiones opcionales.",
         back:{title:"Salta — Norte Argentino", body:"4 noches en Hotel Carlos IV con desayuno · Bus con servicio a bordo · Excursiones opcionales: Cafayate, Purmamarca, San Bernardo, Teleférico.",
               rows:[{i:"phone",t:"343 512 3635"},{i:"ig",t:"@turismoroadtrip"}], btn:"Consultar por WhatsApp", link:"https://wa.me/543435123635"}},
-      { name:"Convenio Hospedaje ATE", tag:"En todo el país", color:"green",
-        ph:{pre:"ATE Entre Ríos", name:"Hoteles · Cabañas · Campings", badge:"Todo el país", sub:"Entre Ríos y todo el país"},
-        desc:"Convenio con hoteles, cabañas y campings en toda la Argentina.",
-        back:{title:"Convenio con hoteles, cabañas y campings", body:"ATE Entre Ríos tiene convenio con alojamientos en toda la provincia y en todo el país.",
-              rows:[{i:"info",t:"Pedile el catálogo a tu delegado/a"}], btn:null}},
+      { name:"Convenio Hospedaje ATE", tag:"136 convenios · 14 provincias", color:"green",
+        ph:{pre:"ATE Entre Ríos", name:"Hoteles · Cabañas · Campings", badge:"136 convenios · 14 provincias", sub:"Entre Ríos y todo el país"},
+        desc:"Convenio con hoteles, cabañas y campings en 14 provincias de todo el país.",
+        back:{title:"Convenio con hoteles, cabañas y campings", body:"ATE Entre Ríos tiene 136 convenios con hoteles, cabañas y campings en 14 provincias de todo el país.",
+              rows:[{i:"info",t:"136 convenios · 14 provincias"}], btn:"Ver listado de convenios (PDF)", link:"https://github.com/mauroalcaraz/atebeneficios/blob/main/ATE_Turismo_Convenios_2025%20(5).pdf"}},
       { name:"Hotel Maunumby — Chajarí", tag:"20% de descuento", color:"teal",
         ph:{pre:"Turismo", name:"Hotel Maunumby Chajarí", badge:"20% dto.", sub:"Sobre el canon diario de alojamiento"},
         desc:"20% de descuento sobre el canon diario de alojamiento para afiliados y familia.",
@@ -282,15 +282,4 @@ function render(secId){
   ).join('');
 }
 
-document.getElementById('tabs').addEventListener('click', e => {
-  const btn = e.target.closest('.tab');
-  if(!btn) return;
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
-  btn.classList.add('on');
-  render(btn.dataset.sec);
-});
-
-render('todos');
-</script>
-</body>
-</html>
+document.getElementById('tabs').addEventLis
