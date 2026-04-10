@@ -3,290 +3,267 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Beneficios ATE Entre R&#237;os</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<title>Beneficios ATE Entre Rios</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --g:#1e7e1e; --gl:#2da82d; --gb:#edf7ed;
-  --bk:#111; --tx:#1a1a1a; --mu:#5a5a5a; --bd:#e0e0e0; --r:14px;
-}
-body { font-family:'Inter','Segoe UI',Arial,sans-serif; background:#f0f2f0; color:var(--tx); }
-
-.hd { background:var(--g); padding:10px 28px 10px; }
-.hd-in { max-width:1000px; margin:0 auto; display:flex; align-items:center; gap:16px; }
-.hd-ic { width:48px; height:48px; border-radius:50%; background:rgba(255,255,255,.18); border:2px solid rgba(255,255,255,.4); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-.hd h1 { font-size:19px; font-weight:800; color:#fff; letter-spacing:-.01em; }
-.hd p  { font-size:12px; color:rgba(255,255,255,.7); margin-top:2px; }
-.hd-st { height:4px; background:var(--bk); }
-
-.afil { background:#f0f7f0; border-bottom:1px solid #c8e6c8; padding:9px 24px; }
-.afil-in { max-width:1000px; margin:0 auto; display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
-.afil span { font-size:12px; color:#2a6b2a; font-weight:600; }
-.afil a { font-size:12px; color:#1e7e1e; text-decoration:none; font-weight:500; }
-.afil a:hover { text-decoration:underline; }
-.afil-dot { font-size:11px; color:#5a5a5a; }
-
-.tw { background:var(--bk); overflow-x:auto; scrollbar-width:none; position:sticky; top:0; z-index:10; }
-.tw::-webkit-scrollbar { display:none; }
-.tabs { max-width:1000px; margin:0 auto; display:flex; padding:0 16px; }
-.tab { background:none; border:none; color:rgba(255,255,255,.5); font-family:inherit; font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:12px 16px; cursor:pointer; white-space:nowrap; border-bottom:3px solid transparent; transition:color .15s,border-color .15s; }
-.tab:hover { color:rgba(255,255,255,.85); }
-.tab.on { color:#fff; border-bottom-color:var(--gl); }
-
-.page { max-width:1000px; margin:0 auto; padding:32px 16px 56px; }
-.sec { margin-bottom:44px; }
-.sec-t { font-size:10px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--g); border-bottom:2px solid var(--g); padding-bottom:9px; margin-bottom:20px; display:flex; align-items:center; gap:8px; }
-.sec-t svg { width:16px; height:16px; }
-.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px; }
-
-.fw { height:290px; perspective:900px; cursor:pointer; }
-.fw:focus { outline:2px solid var(--g); outline-offset:3px; border-radius:var(--r); }
-.fc { width:100%; height:100%; position:relative; transform-style:preserve-3d; transition:transform .55s cubic-bezier(.4,0,.2,1); }
-.fw.flipped .fc { transform:rotateY(180deg); }
-.ff,.fb { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; border-radius:var(--r); overflow:hidden; border:.5px solid var(--bd); }
-
-.ff { background:#fff; display:flex; flex-direction:column; }
-.fw:hover .ff { border-color:#aaa; box-shadow:0 6px 20px rgba(0,0,0,.1); }
-
-.ph { width:100%; height:150px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:14px; text-align:center; gap:5px; flex-shrink:0; }
-.ph.green{background:#1e7e1e;} .ph.blue{background:#1560a0;}
-.ph.terra{background:#7a3410;} .ph.teal{background:#0d6e6e;}
-.ph.plum{background:#5a2d82;} .ph.navy{background:#1a2e5a;}
-.ph-pre  { font-size:9px; color:rgba(255,255,255,.6); letter-spacing:.1em; text-transform:uppercase; }
-.ph-name { font-size:13px; font-weight:800; color:#fff; line-height:1.2; }
-.ph-badge{ background:rgba(0,0,0,.25); color:#fff; font-size:11px; font-weight:700; padding:3px 12px; border-radius:20px; }
-.ph-sub  { font-size:10px; color:rgba(255,255,255,.6); line-height:1.3; }
-
-.fi { padding:11px 13px 13px; flex:1; display:flex; flex-direction:column; }
-.fn { font-size:13px; font-weight:700; color:var(--tx); margin-bottom:3px; line-height:1.25; }
-.fd { font-size:11px; color:var(--mu); line-height:1.45; flex:1; }
-.ft-tag { margin-top:8px; display:inline-block; font-size:10px; font-weight:700; letter-spacing:.04em; padding:3px 9px; border-radius:20px; background:var(--gb); color:var(--g); border:.5px solid #b0d8b0; }
-.fh { position:absolute; bottom:8px; right:10px; font-size:10px; color:rgba(0,0,0,.28); font-weight:500; }
-
-.fb { background:var(--g); transform:rotateY(180deg); display:flex; flex-direction:column; padding:18px 16px 14px; color:#fff; }
-.fb.blue-back { background:#1560a0; }
-.fb-t { font-size:13px; font-weight:800; color:#fff; margin-bottom:8px; line-height:1.3; }
-.fb-b { font-size:11.5px; color:rgba(255,255,255,.88); line-height:1.6; flex:1; }
-.fb-r { display:flex; gap:6px; margin-top:5px; align-items:flex-start; font-size:11.5px; color:rgba(255,255,255,.8); }
-.fb-r svg { width:12px; height:12px; flex-shrink:0; margin-top:2px; opacity:.7; }
-.fb-btn { margin-top:12px; background:#fff; border:none; border-radius:8px; padding:8px 14px; font-size:12px; font-weight:700; font-family:inherit; cursor:pointer; display:flex; align-items:center; gap:5px; width:fit-content; }
-.fb-btn.green-btn { color:var(--g); } .fb-btn.green-btn:hover { background:#e8f5e8; }
-.fb-btn.blue-btn  { color:#1560a0; }  .fb-btn.blue-btn:hover  { background:#e8f0fb; }
-.fb-x { position:absolute; top:9px; right:9px; background:rgba(255,255,255,.2); border:none; color:#fff; border-radius:50%; width:26px; height:26px; cursor:pointer; font-size:13px; display:flex; align-items:center; justify-content:center; font-family:inherit; }
-.fb-x:hover { background:rgba(255,255,255,.35); }
-
-.foot { background:var(--bk); color:rgba(255,255,255,.4); text-align:center; font-size:11px; padding:16px; }
-.foot strong { color:rgba(255,255,255,.7); }
-
-@media(max-width:480px){
-  .grid { grid-template-columns:1fr 1fr; gap:10px; }
-  .fw { height:270px; }
-  .ph { height:132px; }
-}
-@media(max-width:340px){ .grid { grid-template-columns:1fr; } }
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--g:#1e7e1e;--gl:#2da82d;--b:#1560a0;--bk:#111;--tx:#1a1a1a;--mu:#666;--r:14px}
+body{font-family:Inter,sans-serif;background:#f0f2f0;color:var(--tx)}
+.hd{background:var(--g);padding:10px 24px}
+.hd-in{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:16px}
+.hd h1{font-size:20px;font-weight:800;color:#fff}
+.hd p{font-size:12px;color:rgba(255,255,255,.75);margin-top:2px}
+.stripe{height:4px;background:var(--bk)}
+.afil{background:#f0f7f0;border-bottom:1px solid #c8e6c8;padding:8px 24px;font-size:12px;color:#2a6b2a;font-weight:600}
+.afil a{color:var(--g);text-decoration:none;font-weight:500}
+.tw{background:var(--bk);position:sticky;top:0;z-index:10;overflow-x:auto}
+.tabs{max-width:1000px;margin:0 auto;display:flex;padding:0 16px}
+.tab{background:none;border:none;border-bottom:3px solid transparent;color:rgba(255,255,255,.5);font:700 11px Inter,sans-serif;letter-spacing:.07em;text-transform:uppercase;padding:12px 14px;cursor:pointer;white-space:nowrap}
+.tab:hover{color:#fff}
+.tab.on{color:#fff;border-bottom-color:var(--gl)}
+.page{max-width:1000px;margin:0 auto;padding:28px 16px 56px}
+.sec{margin-bottom:40px}
+.sec-t{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g);border-bottom:2px solid var(--g);padding-bottom:8px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.card{height:280px;perspective:800px;cursor:pointer}
+.card-in{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .5s ease}
+.card.flip .card-in{transform:rotateY(180deg)}
+.front,.back{position:absolute;inset:0;border-radius:var(--r);backface-visibility:hidden;overflow:hidden;border:.5px solid #ddd}
+.front{background:#fff;display:flex;flex-direction:column}
+.card:hover .front{box-shadow:0 4px 16px rgba(0,0,0,.1);border-color:#bbb}
+.ph{height:148px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px;text-align:center;gap:4px;flex-shrink:0}
+.ph.green{background:#1e7e1e}.ph.blue{background:#1560a0}.ph.teal{background:#0d6e6e}
+.ph.plum{background:#5a2d82}.ph.navy{background:#1a2e5a}.ph.terra{background:#7a3410}
+.ph-pre{font-size:9px;color:rgba(255,255,255,.6);letter-spacing:.1em;text-transform:uppercase}
+.ph-name{font-size:13px;font-weight:800;color:#fff;line-height:1.2}
+.ph-badge{background:rgba(0,0,0,.25);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px}
+.ph-sub{font-size:10px;color:rgba(255,255,255,.6);line-height:1.3}
+.info{padding:10px 12px 12px;flex:1;display:flex;flex-direction:column}
+.iname{font-size:13px;font-weight:700;margin-bottom:3px}
+.idesc{font-size:11px;color:var(--mu);line-height:1.45;flex:1}
+.itag{margin-top:8px;display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;background:#edf7ed;color:var(--g);border:.5px solid #b0d8b0}
+.hint{position:absolute;bottom:7px;right:10px;font-size:10px;color:rgba(0,0,0,.25)}
+.back{transform:rotateY(180deg);display:flex;flex-direction:column;padding:16px 14px 12px;color:#fff}
+.back.green{background:var(--g)}.back.blue{background:var(--b)}
+.back-title{font-size:13px;font-weight:800;margin-bottom:7px;line-height:1.3}
+.back-body{font-size:11px;line-height:1.6;flex:1;color:rgba(255,255,255,.9)}
+.back-row{display:flex;gap:5px;margin-top:4px;font-size:11px;color:rgba(255,255,255,.8)}
+.close-btn{position:absolute;top:8px;right:8px;background:rgba(255,255,255,.2);border:none;color:#fff;border-radius:50%;width:24px;height:24px;cursor:pointer;font-size:13px;font-family:inherit}
+.action-btn{margin-top:10px;background:#fff;border:none;border-radius:8px;padding:7px 12px;font-size:11px;font-weight:700;cursor:pointer;font-family:inherit}
+.action-btn.green{color:var(--g)}.action-btn.blue{color:var(--b)}
+.foot{background:var(--bk);color:rgba(255,255,255,.4);text-align:center;font-size:11px;padding:14px}
+.foot strong{color:rgba(255,255,255,.7)}
+@media(max-width:500px){.grid{grid-template-columns:1fr 1fr;gap:10px}.card{height:260px}.ph{height:130px}}
 </style>
 </head>
 <body>
 
 <div class="hd">
   <div class="hd-in">
-    <div class="hd-ic" style="background:none;border:none;width:72px;height:72px;flex-shrink:0;"><img src="data:image/png;base64,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" alt="ATE Entre R&#237;os" style="width:100%;height:100%;object-fit:contain;"/></div>
-    <div>
-      <h1>Cat&#225;logo de Beneficios</h1>
-      <p>Asociaci&#243;n Trabajadores del Estado &middot; Entre R&#237;os</p>
-    </div>
+    <img src="data:image/png;base64,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" style="height:68px;width:auto;flex-shrink:0" alt="ATE">
+    <div><h1>Cat&aacute;logo de Beneficios</h1><p>Asociaci&oacute;n Trabajadores del Estado &middot; Entre R&iacute;os</p></div>
   </div>
 </div>
-<div class="hd-st"></div>
-
+<div class="stripe"></div>
 <div class="afil">
-  <div class="afil-in">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1e7e1e" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-    <span>Afili&#225;te y sum&#225;te a defender nuestros derechos</span>
-    <span class="afil-dot">&middot;</span>
-    <a href="/cdn-cgi/l/email-protection#a4c0c1c8c1c3c5c0cbd7c5d0c18ac7c3c1e4c3c9c5cdc88ac7cbc9"><span class="__cf_email__" data-cfemail="87e3e2ebe2e0e6e3e8f4e6f3e2a9e4e0e2c7e0eae6eeeba9e4e8ea">[email&#160;protected]</span></a>
-  </div>
+  &nbsp;Afili&aacute;te y sum&aacute;te a defender nuestros derechos &nbsp;&middot;&nbsp;
+  <a href="#" id="em-link">delegadosate.cge [arroba] gmail.com</a>
 </div>
-
-<div class="tw">
-  <div class="tabs" id="tabs">
-    <button class="tab on" data-sec="todos">Todos</button>
-    <button class="tab" data-sec="turismo">Turismo</button>
-    <button class="tab" data-sec="salud">Salud</button>
-    <button class="tab" data-sec="comercios">Comercios</button>
-    <button class="tab" data-sec="salon">Sal&#243;n</button>
-    <button class="tab" data-sec="formacion">Formaci&#243;n</button>
-    <button class="tab" data-sec="tecnologia">Tecnolog&#237;a</button>
-  </div>
-</div>
+<div class="tw"><div class="tabs" id="tabs">
+  <button class="tab on" data-s="todos">Todos</button>
+  <button class="tab" data-s="turismo">Turismo</button>
+  <button class="tab" data-s="salud">Salud</button>
+  <button class="tab" data-s="comercios">Comercios</button>
+  <button class="tab" data-s="salon">Sal&oacute;n</button>
+  <button class="tab" data-s="formacion">Formaci&oacute;n</button>
+  <button class="tab" data-s="tecnologia">Tecnolog&iacute;a</button>
+</div></div>
 
 <div class="page" id="page"></div>
 
-<div class="foot"><strong>ATE Entre R&#237;os</strong> &middot; Cat&#225;logo de Beneficios para Afiliados &middot; 100 a&#241;os de lucha &middot; 2026</div>
+<div class="foot"><strong>ATE Entre R&iacute;os</strong> &middot; Cat&aacute;logo de Beneficios &middot; 100 a&ntilde;os de lucha &middot; 2026</div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-var S = [
-  {
-    id:"turismo",
-    label:"Turismo &mdash; Viajes",
-    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>',
-    items:[
-      { name:"Convenio Hospedaje ATE", tag:"136 convenios &middot; 14 provincias", color:"green",
-        ph:{pre:"ATE Entre R&#237;os", name:"Hoteles &middot; Caba&#241;as &middot; Campings", badge:"136 convenios &middot; 14 provincias", sub:"Entre R&#237;os y todo el pa&#237;s"},
-        desc:"136 convenios con hoteles, caba&#241;as y campings en 14 provincias de todo el pa&#237;s.",
-        back:{title:"Hoteles &middot; Caba&#241;as &middot; Campings", body:"ATE Entre R&#237;os tiene 136 convenios con alojamientos en 14 provincias de todo el pa&#237;s.",
-              rows:[{i:"info",t:"136 convenios &middot; 14 provincias"}],
-              btn:"Ver listado de convenios (PDF)",
-              link:"https://raw.githubusercontent.com/DelegadosATE/beneficiosafiliados/main/ATE_Turismo_Convenios_2025%20(5).pdf"}},
-      { name:"RoadTrip Turismo", tag:"Precio especial afiliados", color:"blue",
-        ph:{pre:"RoadTrip Turismo", name:"Federaci&#243;n + Finde Largo", badge:"$186.000", sub:"Hotel Salto Grande &middot; 2 noches &middot; Termas"},
-        desc:"Escapada a Federaci&#243;n con precios exclusivos para afiliados ATE.",
-        back:{title:"Federaci&#243;n + Finde Largo", body:"Hotel Salto Grande &middot; 2 noches con desayuno &middot; Entrada a Termas &middot; Opci&#243;n media pensi&#243;n y show.",
-              rows:[{i:"phone",t:"343 512 3635"},{i:"ig",t:"@turismoroadtrip"}],
-              btn:"Consultar por WhatsApp", link:"https://wa.me/543435123635"}},
-      { name:"RoadTrip Turismo", tag:"Precio especial afiliados", color:"blue",
-        ph:{pre:"RoadTrip Turismo", name:"Federaci&#243;n &mdash; 23 al 25 de Mayo", badge:"23&ndash;25 Mayo", sub:"Termas &middot; Show &middot; Excursiones"},
-        desc:"Finde largo en Federaci&#243;n con hotel, termas y show de humor.",
-        back:{title:"Federaci&#243;n &middot; 23 al 25 de Mayo", body:"2 noches en Hotel Salto Grande &middot; Show de humor &middot; D&#237;a de termas &middot; Excursiones incluidas.",
-              rows:[{i:"phone",t:"343 512 3635"},{i:"ig",t:"@turismoroadtrip"}],
-              btn:"Consultar por WhatsApp", link:"https://wa.me/543435123635"}},
-      { name:"RoadTrip Turismo", tag:"Precio especial afiliados", color:"blue",
-        ph:{pre:"RoadTrip Turismo", name:"Salta &mdash; Norte Argentino", badge:"Salida 9 Sept.", sub:"Hotel Carlos IV &middot; 4 noches &middot; Cafayate"},
-        desc:"Norte argentino con 4 noches en Salta y excursiones opcionales.",
-        back:{title:"Salta &mdash; Norte Argentino", body:"4 noches en Hotel Carlos IV con desayuno &middot; Bus con servicio a bordo &middot; Excursiones opcionales: Cafayate, Purmamarca, San Bernardo, Telef&#233;rico.",
-              rows:[{i:"phone",t:"343 512 3635"},{i:"ig",t:"@turismoroadtrip"}],
-              btn:"Consultar por WhatsApp", link:"https://wa.me/543435123635"}},
-      { name:"Hotel Maunumby &mdash; Chajar&#237;", tag:"20% de descuento", color:"teal",
-        ph:{pre:"Turismo", name:"Hotel Maunumby Chajar&#237;", badge:"20% dto.", sub:"Sobre el canon diario de alojamiento"},
-        desc:"20% de descuento sobre el canon diario de alojamiento para afiliados y familia.",
-        back:{title:"Hotel Maunumby Chajar&#237;", body:"20% de descuento sobre el canon diario de alojamiento para afiliados y familia.",
-              rows:[{i:"map",t:"Urquiza 1040, Chajar&#237;, Entre R&#237;os"}],
-              btn:"Ver ubicaci&#243;n", link:"https://maps.google.com/?q=Urquiza+1040+Chajari"}}
-    ]
-  },
-  {
-    id:"salud",
-    label:"Salud",
-    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>',
-    items:[
-      { name:"&#211;ptica Carboni", tag:"Descuento + acumulable OSER", color:"navy",
-        ph:{pre:"Salud", name:"&#211;ptica Carboni", badge:"Descuento especial", sub:"Acumulable con beneficio OSER"},
-        desc:"Descuentos especiales para afiliados ATE, acumulables con el beneficio de OSER.",
-        back:{title:"&#211;ptica Carboni", body:"Descuentos especiales para afiliados a ATE. El beneficio es acumulable con la cobertura de OSER.",
-              rows:[{i:"web",t:"opticacarboni.com.ar"}],
-              btn:"Ver sitio web", link:"https://www.opticacarboni.com.ar/"}}
-    ]
-  },
-  {
-    id:"comercios",
-    label:"Comercios",
-    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>',
-    items:[
-      { name:"Maravilloso Mundo", tag:"15% dto. lunes y mi&#233;rcoles", color:"plum",
-        ph:{pre:"Librer&#237;a &middot; Jugueter&#237;a", name:"Maravilloso Mundo", badge:"15% dto.", sub:"Todos los lunes y mi&#233;rcoles"},
-        desc:"15% de descuento en librer&#237;a y jugueter&#237;a los lunes y mi&#233;rcoles.",
-        back:{title:"Maravilloso Mundo", body:"15% de descuento todos los lunes y mi&#233;rcoles. Present&#225; tu carnet de afiliaci&#243;n al momento de la compra.",
-              rows:[{i:"web",t:"maravillosomundo.com.ar"}],
-              btn:"Ver sitio web", link:"https://www.maravillosomundo.com.ar/"}}
-    ]
-  },
-  {
-    id:"salon",
-    label:"Sal&#243;n de Eventos",
-    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
-    items:[
-      { name:"Camping ATE Paran&#225;", tag:"Infraestructura propia para afiliados", color:"green",
-        ph:{pre:"ATE Entre R&#237;os", name:"Sal&#243;n para Eventos", badge:"Uso exclusivo", sub:"Camping ATE &middot; Paran&#225;"},
-        desc:"Sal&#243;n con galer&#237;a cubierta, quincho y amplios espacios verdes.",
-        back:{title:"Sal&#243;n de Eventos &mdash; Camping ATE Paran&#225;", body:"Galer&#237;a cubierta con techo de madera, columnas de ladrillo visto, parrilla y amplios espacios verdes. Exclusivo para afiliados.",
-              rows:[{i:"info",t:"Consult&#225; disponibilidad en sede ATE"}], btn:null}}
-    ]
-  },
-  {
-    id:"formacion",
-    label:"Formaci&#243;n",
-    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>',
-    items:[
-      { name:"English Corner &mdash; San Benito", tag:"20% dto. + 100% bonif. inscripci&#243;n", color:"teal",
-        ph:{pre:"Instituto de Ingl&#233;s", name:"English Corner San Benito", badge:"20% dto.", sub:"+ 100% bonif. inscripci&#243;n (10 primeros)"},
-        desc:"20% sobre la cuota mensual y 100% de bonificaci&#243;n en la inscripci&#243;n para los primeros diez.",
-        back:{title:"Instituto de Ingl&#233;s English Corner", body:"20% de descuento sobre la cuota mensual y 100% de bonificaci&#243;n en la inscripci&#243;n para los diez primeros inscriptos.",
-              rows:[{i:"map",t:"Rivadavia 598, San Benito"},{i:"info",t:"Inicio abril &mdash; cupos limitados"}], btn:null}}
-    ]
-  },
-  {
-    id:"tecnologia",
-    label:"Tecnolog&#237;a",
-    icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>',
-    items:[
-      { name:"IMAX Servicio T&#233;cnico", tag:"Regalo exclusivo para afiliados", color:"navy",
-        ph:{pre:"Tecnolog&#237;a &middot; SideCompras", name:"IMAX Servicio T&#233;cnico", badge:"Regalo sorpresa", sub:"Present&#225; recibo de sueldo y DNI"},
-        desc:"Obt&#233; un regalo sorpresa por tu compra en IMAX a trav&#233;s de SideCompras.",
-        back:{title:"IMAX Servicio T&#233;cnico Inform&#225;tico", body:"Beneficio exclusivo para afiliados. Comprando a IMAX por SideCompras obt&#233;s un regalo sorpresa. Present&#225; tu recibo de sueldo y DNI luego de la compra.",
-              rows:[{i:"info",t:"Plataforma: SideCompras"},{i:"info",t:"Requisito: recibo de sueldo + DNI"}],
-              btn:"Ir a SideCompras", link:"https://sidecompras.com"}}
-    ]
-  }
+<script>
+// Fix email link after page load so Cloudflare won't intercept
+window.onload = function(){
+  var el = document.getElementById('em-link');
+  if(el){ el.href = 'mai'+'lto:delegadosate.cge'+'@'+'gmail.com'; el.textContent = 'delegadosate.cge@gmail.com'; }
+};
+
+var D = [
+  {s:"turismo", label:"Turismo", items:[
+    {c:"green", pp:"ATE Entre Rios", pn:"Hoteles - Cabanas - Campings", pb:"136 convenios - 14 provincias", ps:"Entre Rios y todo el pais",
+     n:"Convenio Hospedaje ATE", t:"136 convenios - 14 provincias", d:"136 convenios con hoteles, cabanas y campings en 14 provincias.",
+     bt:"Hoteles - Cabanas - Campings", bb:"ATE Entre Rios tiene 136 convenios con alojamientos en 14 provincias de todo el pais.",
+     br:["info:136 convenios - 14 provincias"], bn:"Ver convenios PDF", bl:"https://raw.githubusercontent.com/DelegadosATE/beneficiosafiliados/main/ATE_Turismo_Convenios_2025%20(5).pdf"},
+    {c:"blue", pp:"RoadTrip Turismo", pn:"Federacion + Finde Largo", pb:"$186.000", ps:"Hotel Salto Grande - 2 noches - Termas",
+     n:"RoadTrip Turismo", t:"Precio especial afiliados", d:"Escapada a Federacion con precios exclusivos para afiliados ATE.",
+     bt:"Federacion + Finde Largo", bb:"Hotel Salto Grande - 2 noches con desayuno - Entrada a Termas - Opcion media pension y show.",
+     br:["phone:343 512 3635","ig:@turismoroadtrip"], bn:"WhatsApp", bl:"https://wa.me/543435123635"},
+    {c:"blue", pp:"RoadTrip Turismo", pn:"Federacion 23 al 25 de Mayo", pb:"23-25 Mayo", ps:"Termas - Show - Excursiones",
+     n:"RoadTrip Turismo", t:"Precio especial afiliados", d:"Finde largo en Federacion con hotel, termas y show de humor.",
+     bt:"Federacion 23-25 Mayo", bb:"2 noches Hotel Salto Grande - Show de humor - Termas - Excursiones incluidas.",
+     br:["phone:343 512 3635","ig:@turismoroadtrip"], bn:"WhatsApp", bl:"https://wa.me/543435123635"},
+    {c:"blue", pp:"RoadTrip Turismo", pn:"Salta - Norte Argentino", pb:"Salida 9 Sept.", ps:"Hotel Carlos IV - 4 noches - Cafayate",
+     n:"RoadTrip Turismo", t:"Precio especial afiliados", d:"Norte argentino con 4 noches en Salta y excursiones opcionales.",
+     bt:"Salta - Norte Argentino", bb:"4 noches Hotel Carlos IV con desayuno - Bus c/servicio a bordo - Excursiones: Cafayate, Purmamarca, San Bernardo, Teleferico.",
+     br:["phone:343 512 3635","ig:@turismoroadtrip"], bn:"WhatsApp", bl:"https://wa.me/543435123635"},
+    {c:"teal", pp:"Turismo", pn:"Hotel Maunumby Chjari", pb:"20% dto.", ps:"Sobre el canon diario",
+     n:"Hotel Maunumby Chjari", t:"20% de descuento", d:"20% de descuento sobre el canon diario para afiliados y familia.",
+     bt:"Hotel Maunumby Chjari", bb:"20% de descuento sobre el canon diario de alojamiento para afiliados y familia.",
+     br:["map:Urquiza 1040, Chjari, Entre Rios"], bn:"Ver ubicacion", bl:"https://maps.google.com/?q=Urquiza+1040+Chajari"}
+  ]},
+  {s:"salud", label:"Salud", items:[
+    {c:"navy", pp:"Salud", pn:"Optica Carboni", pb:"Descuento especial", ps:"Acumulable con OSER",
+     n:"Optica Carboni", t:"Descuento + acumulable OSER", d:"Descuentos especiales para afiliados ATE, acumulables con OSER.",
+     bt:"Optica Carboni", bb:"Descuentos especiales para afiliados a ATE, acumulables con la cobertura de OSER.",
+     br:["web:opticacarboni.com.ar"], bn:"Ver sitio web", bl:"https://www.opticacarboni.com.ar/"}
+  ]},
+  {s:"comercios", label:"Comercios", items:[
+    {c:"plum", pp:"Libreria - Jugueteria", pn:"Maravilloso Mundo", pb:"15% dto.", ps:"Lunes y miercoles",
+     n:"Maravilloso Mundo", t:"15% dto. lunes y miercoles", d:"15% de descuento en libreria y jugueteria los lunes y miercoles.",
+     bt:"Maravilloso Mundo", bb:"15% de descuento todos los lunes y miercoles. Presenta tu carnet de afiliacion.",
+     br:["web:maravillosomundo.com.ar"], bn:"Ver sitio web", bl:"https://www.maravillosomundo.com.ar/"}
+  ]},
+  {s:"salon", label:"Salon de Eventos", items:[
+    {c:"green", pp:"ATE Entre Rios", pn:"Salon para Eventos", pb:"Uso exclusivo", ps:"Camping ATE - Parana",
+     n:"Camping ATE Parana", t:"Infraestructura propia", d:"Salon con galeria cubierta, quincho y espacios verdes para afiliados.",
+     bt:"Salon de Eventos - Camping ATE Parana", bb:"Galeria cubierta con techo de madera, columnas de ladrillo, parrilla y amplios espacios verdes.",
+     br:["info:Consulta disponibilidad en sede ATE"], bn:null, bl:null}
+  ]},
+  {s:"formacion", label:"Formacion", items:[
+    {c:"teal", pp:"Instituto de Ingles", pn:"English Corner San Benito", pb:"20% dto.", ps:"100% bonif. inscripcion (10 primeros)",
+     n:"English Corner San Benito", t:"20% dto. + 100% bonif.", d:"20% sobre la cuota mensual y 100% de bonificacion en la inscripcion.",
+     bt:"English Corner San Benito", bb:"20% dto. sobre la cuota mensual y 100% bonificacion en inscripcion para los 10 primeros.",
+     br:["map:Rivadavia 598 San Benito","info:Inicio abril - cupos limitados"], bn:null, bl:null}
+  ]},
+  {s:"tecnologia", label:"Tecnologia", items:[
+    {c:"navy", pp:"Tecnologia - SideCompras", pn:"IMAX Servicio Tecnico", pb:"Regalo sorpresa", ps:"Presenta recibo y DNI",
+     n:"IMAX Servicio Tecnico", t:"Regalo exclusivo para afiliados", d:"Obtene un regalo sorpresa por tu compra en IMAX via SideCompras.",
+     bt:"IMAX Servicio Tecnico", bb:"Comprando a IMAX por SideCompras obtenes un regalo sorpresa. Presenta recibo de sueldo y DNI luego de la compra.",
+     br:["info:Plataforma: SideCompras","info:Requisito: recibo + DNI"], bn:"Ir a SideCompras", bl:"https://sidecompras.com"}
+  ]}
 ];
 
-function ico(t){
-  var s='width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"';
-  var m={
-    phone:'<svg '+s+'><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.12 1.18 2 2 0 012.1 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6z"/></svg>',
-    map:  '<svg '+s+'><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
-    web:  '<svg '+s+'><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>',
-    ig:   '<svg '+s+'><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>',
-    info: '<svg '+s+'><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>'
-  };
-  return m[t]||m.info;
+function icoSVG(type){
+  var s = 'width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"';
+  if(type==="phone") return '<svg '+s+'><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.12 1.18 2 2 0 012.1 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6z"/></svg>';
+  if(type==="map")   return '<svg '+s+'><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+  if(type==="web")   return '<svg '+s+'><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>';
+  if(type==="ig")    return '<svg '+s+'><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/></svg>';
+  return '<svg '+s+'><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>';
 }
 
 function mkCard(item, uid){
-  var p=item.ph, b=item.back;
-  var isBlue=item.color==="blue";
-  var backClass=isBlue?"fb blue-back":"fb";
-  var btnClass=isBlue?"fb-btn blue-btn":"fb-btn green-btn";
-  var ph='<div class="ph '+item.color+'">'
-    +'<div class="ph-pre">'+p.pre+'</div>'
-    +'<div class="ph-name">'+p.name+'</div>'
-    +'<div class="ph-badge">'+p.badge+'</div>'
-    +(p.sub?'<div class="ph-sub">'+p.sub+'</div>':'')
-    +'</div>';
-  var rows=(b.rows||[]).map(function(r){return '<div class="fb-r">'+ico(r.i)+'<span>'+r.t+'</span></div>';}).join('');
-  var btn=b.btn?'<button class="'+btnClass+'" onclick="event.stopPropagation();window.open(\''+b.link+'\',\'_blank\')">'+b.btn+'</button>':'';
-  return '<div class="fw" id="'+uid+'" tabindex="0" role="button" aria-label="'+item.name+'" onclick="flip(\''+uid+'\')" onkeydown="if(event.key===\'Enter\'||event.key===\' \')flip(\''+uid+'\')">'
-    +'<div class="fc">'
-    +'<div class="ff">'+ph
-    +'<div class="fi">'
-    +'<div class="fn">'+item.name+'</div>'
-    +'<div class="fd">'+item.desc+'</div>'
-    +'<span class="ft-tag">'+item.tag+'</span>'
-    +'</div>'
-    +'<div class="fh">ver m&#225;s &rarr;</div>'
-    +'</div>'
-    +'<div class="'+backClass+'">'
-    +'<button class="fb-x" onclick="event.stopPropagation();unflip(\''+uid+'\')">&#x2715;</button>'
-    +'<div class="fb-t">'+b.title+'</div>'
-    +'<div class="fb-b">'+b.body+rows+'</div>'
-    +btn
-    +'</div>'
-    +'</div>'
-    +'</div>';
-}
+  var wrap = document.createElement('div');
+  wrap.className = 'card';
+  wrap.id = uid;
 
-function flip(id){ document.getElementById(id).classList.add('flipped'); }
-function unflip(id){ document.getElementById(id).classList.remove('flipped'); }
+  var inner = document.createElement('div');
+  inner.className = 'card-in';
+
+  // FRONT
+  var front = document.createElement('div');
+  front.className = 'front';
+
+  var ph = document.createElement('div');
+  ph.className = 'ph ' + item.c;
+  ph.innerHTML = '<div class="ph-pre">'+item.pp+'</div>'
+    + '<div class="ph-name">'+item.pn+'</div>'
+    + '<div class="ph-badge">'+item.pb+'</div>'
+    + (item.ps ? '<div class="ph-sub">'+item.ps+'</div>' : '');
+
+  var info = document.createElement('div');
+  info.className = 'info';
+  info.innerHTML = '<div class="iname">'+item.n+'</div>'
+    + '<div class="idesc">'+item.d+'</div>'
+    + '<span class="itag">'+item.t+'</span>';
+
+  var hint = document.createElement('div');
+  hint.className = 'hint';
+  hint.textContent = 'ver mas >';
+
+  front.appendChild(ph);
+  front.appendChild(info);
+  front.appendChild(hint);
+
+  // BACK
+  var back = document.createElement('div');
+  back.className = 'back ' + (item.c === 'blue' ? 'blue' : 'green');
+
+  var closeBtn = document.createElement('button');
+  closeBtn.className = 'close-btn';
+  closeBtn.textContent = 'x';
+  closeBtn.onclick = function(e){ e.stopPropagation(); wrap.classList.remove('flip'); };
+
+  var bt = document.createElement('div');
+  bt.className = 'back-title';
+  bt.textContent = item.bt;
+
+  var bb = document.createElement('div');
+  bb.className = 'back-body';
+  bb.textContent = item.bb;
+
+  (item.br || []).forEach(function(r){
+    var parts = r.split(':');
+    var type = parts[0];
+    var text = parts.slice(1).join(':');
+    var row = document.createElement('div');
+    row.className = 'back-row';
+    row.innerHTML = icoSVG(type) + ' <span>'+text+'</span>';
+    bb.appendChild(row);
+  });
+
+  back.appendChild(closeBtn);
+  back.appendChild(bt);
+  back.appendChild(bb);
+
+  if(item.bn){
+    var aBtn = document.createElement('button');
+    aBtn.className = 'action-btn ' + (item.c === 'blue' ? 'blue' : 'green');
+    aBtn.textContent = item.bn;
+    aBtn.onclick = function(e){ e.stopPropagation(); window.open(item.bl,'_blank'); };
+    back.appendChild(aBtn);
+  }
+
+  inner.appendChild(front);
+  inner.appendChild(back);
+  wrap.appendChild(inner);
+
+  wrap.onclick = function(){ wrap.classList.toggle('flip'); };
+  return wrap;
+}
 
 function render(secId){
-  var page=document.getElementById('page');
-  var toShow=secId==='todos'?S:S.filter(function(s){return s.id===secId;});
-  page.innerHTML=toShow.map(function(sec){
-    return '<div class="sec">'
-      +'<div class="sec-t">'+sec.icon+sec.label+'</div>'
-      +'<div class="grid">'+sec.items.map(function(item,i){return mkCard(item,'fc-'+sec.id+'-'+i);}).join('')+'</div>'
-      +'</div>';
-  }).join('');
+  var page = document.getElementById('page');
+  page.innerHTML = '';
+  var toShow = secId === 'todos' ? D : D.filter(function(x){ return x.s === secId; });
+  toShow.forEach(function(sec){
+    var secDiv = document.createElement('div');
+    secDiv.className = 'sec';
+    var title = document.createElement('div');
+    title.className = 'sec-t';
+    title.textContent = sec.label;
+    secDiv.appendChild(title);
+    var grid = document.createElement('div');
+    grid.className = 'grid';
+    sec.items.forEach(function(item, i){
+      grid.appendChild(mkCard(item, 'c-'+sec.s+'-'+i));
+    });
+    secDiv.appendChild(grid);
+    page.appendChild(secDiv);
+  });
 }
 
-document.getElementById('tabs').addEventListener('clic
+document.getElementById('tabs').addEventListener('click', function(e){
+  var btn = e.target.closest('.tab');
+  if(!btn) return;
+  document.querySelectorAll('.tab').forEach(function(t){ t.classList.remove('on'); });
+  btn.classList.add('on');
+  render(btn.dataset.s);
+});
+
+render('todos');
+</script>
+</body>
+</html>
